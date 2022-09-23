@@ -128,6 +128,15 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
 
+/* QUESTO PER EVITARE CHE TRA DESKTOP E TABLET SI ROMPESSE */
+
+@media screen and (max-width: 1199px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+/* TABLET LAYOUT */
 
  @media screen and (max-width: 767px) {
 
@@ -142,6 +151,8 @@ img {
 
  }
 
+/* MOBILE LAYOUT */
+
  @media screen and (max-width: 479px) {
 
 
@@ -154,17 +165,45 @@ img {
   }
 
   .container {
-    max-width: 95%;
+    max-width: 96%;
     padding: 0 10px;
   }
 
   .row {
     flex-direction: column;
     align-items: center;
+    gap: 42px;
   }
+
   .lessons .col, .steps .col, .why-us .col {
     width: 100%;
+    margin-bottom: 2rem;
   }
 
+  .text {
+    padding: 0 2rem;
+    font-size: 1.2rem ;
+  }
 
+  .steps .col img {
+    height: 250px;
+  }
+
+  .why-us .col img {
+    max-width: 100%;
+    height: 400px;
+  }
+
+  .why-us .col {
+    text-align: center;
+  }
+
+  .why-us h3 {
+    text-align: left;
+  } 
+
+  li p {
+    text-align: left;
+    font-size: 1.2rem;
+  }
  }
